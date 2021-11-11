@@ -1,1 +1,1 @@
-export { default as display } from './props/display/index'
+export { default as display } from './display/index'
