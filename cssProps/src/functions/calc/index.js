@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function calc()
  */
 export default function calc() {
-    return "calc(" + appendArgs(arguments, ",") + ")"
+    return "calc(" + appendArgs(arguments, ", ") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function hsl()
  */
 export default function hsl() {
-    return "hsl(" + appendArgs(arguments, ",") + ")"
+    return "hsl(" + appendArgs(arguments, ", ") + ")"
 }

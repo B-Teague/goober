@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function clamp()
  */
 export default function clamp() {
-    return "clamp(" + appendArgs(arguments, ",") + ")"
+    return "clamp(" + appendArgs(arguments, ", ") + ")"
 }

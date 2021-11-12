@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function blur()
  */
 export default function blur() {
-    return "blur(" + appendArgs(arguments, ",") + ")"
+    return "blur(" + appendArgs(arguments, ", ") + ")"
 }

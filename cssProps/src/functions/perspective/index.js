@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function perspective()
  */
 export default function perspective() {
-    return "perspective(" + appendArgs(arguments, ",") + ")"
+    return "perspective(" + appendArgs(arguments, ", ") + ")"
 }

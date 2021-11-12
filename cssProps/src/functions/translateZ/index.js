@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function translateZ()
  */
 export default function translateZ() {
-    return "translateZ(" + appendArgs(arguments, ",") + ")"
+    return "translateZ(" + appendArgs(arguments, ", ") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function paint()
  */
 export default function paint() {
-    return "paint(" + appendArgs(arguments, ",") + ")"
+    return "paint(" + appendArgs(arguments, ", ") + ")"
 }

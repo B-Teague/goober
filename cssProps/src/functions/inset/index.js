@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function inset()
  */
 export default function inset() {
-    return "inset(" + appendArgs(arguments, ",") + ")"
+    return "inset(" + appendArgs(arguments, ", ") + ")"
 }

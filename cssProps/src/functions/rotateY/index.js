@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function rotateY()
  */
 export default function rotateY() {
-    return "rotateY(" + appendArgs(arguments, ",") + ")"
+    return "rotateY(" + appendArgs(arguments, ", ") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function env()
  */
 export default function env() {
-    return "env(" + appendArgs(arguments, ",") + ")"
+    return "env(" + appendArgs(arguments, ", ") + ")"
 }

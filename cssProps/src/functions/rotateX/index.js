@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function rotateX()
  */
 export default function rotateX() {
-    return "rotateX(" + appendArgs(arguments, ",") + ")"
+    return "rotateX(" + appendArgs(arguments, ", ") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function invert()
  */
 export default function invert() {
-    return "invert(" + appendArgs(arguments, ",") + ")"
+    return "invert(" + appendArgs(arguments, ", ") + ")"
 }

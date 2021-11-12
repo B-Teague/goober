@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function polygon()
  */
 export default function polygon() {
-    return "polygon(" + appendArgs(arguments, ",") + ")"
+    return "polygon(" + appendArgs(arguments, ", ") + ")"
 }

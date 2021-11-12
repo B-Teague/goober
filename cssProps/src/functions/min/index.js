@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function min()
  */
 export default function min() {
-    return "min(" + appendArgs(arguments, ",") + ")"
+    return "min(" + appendArgs(arguments, ", ") + ")"
 }

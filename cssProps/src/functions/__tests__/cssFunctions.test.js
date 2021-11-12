@@ -65,12 +65,12 @@ describe('cssFunctions', () => {
     });
 
 
-    it('conic-gradient type', () => {
-        expect(typeof cssFunctions.conic-gradient).toEqual('function');
+    it('conicGradient type', () => {
+        expect(typeof cssFunctions.conicGradient).toEqual('function');
     });
 
-    it('conic-gradient', () => {
-        expect(cssFunctions.conic-gradient(255, 255)).toEqual('conic-gradient(255, 255)');
+    it('conicGradient', () => {
+        expect(cssFunctions.conicGradient(255, 255)).toEqual('conicGradient(255, 255)');
     });
 
 
@@ -101,21 +101,21 @@ describe('cssFunctions', () => {
     });
 
 
-    it('cross-fade type', () => {
-        expect(typeof cssFunctions.cross-fade).toEqual('function');
+    it('crossFade type', () => {
+        expect(typeof cssFunctions.crossFade).toEqual('function');
     });
 
-    it('cross-fade', () => {
-        expect(cssFunctions.cross-fade(255, 255)).toEqual('cross-fade(255, 255)');
+    it('crossFade', () => {
+        expect(cssFunctions.crossFade(255, 255)).toEqual('crossFade(255, 255)');
     });
 
 
-    it('drop-shadow type', () => {
-        expect(typeof cssFunctions.drop-shadow).toEqual('function');
+    it('dropShadow type', () => {
+        expect(typeof cssFunctions.dropShadow).toEqual('function');
     });
 
-    it('drop-shadow', () => {
-        expect(cssFunctions.drop-shadow(255, 255)).toEqual('drop-shadow(255, 255)');
+    it('dropShadow', () => {
+        expect(cssFunctions.dropShadow(255, 255)).toEqual('dropShadow(255, 255)');
     });
 
 
@@ -146,12 +146,12 @@ describe('cssFunctions', () => {
     });
 
 
-    it('fit-content type', () => {
-        expect(typeof cssFunctions.fit-content).toEqual('function');
+    it('fitContent type', () => {
+        expect(typeof cssFunctions.fitContent).toEqual('function');
     });
 
-    it('fit-content', () => {
-        expect(cssFunctions.fit-content(255, 255)).toEqual('fit-content(255, 255)');
+    it('fitContent', () => {
+        expect(cssFunctions.fitContent(255, 255)).toEqual('fitContent(255, 255)');
     });
 
 
@@ -182,12 +182,12 @@ describe('cssFunctions', () => {
     });
 
 
-    it('hue-rotate type', () => {
-        expect(typeof cssFunctions.hue-rotate).toEqual('function');
+    it('hueRotate type', () => {
+        expect(typeof cssFunctions.hueRotate).toEqual('function');
     });
 
-    it('hue-rotate', () => {
-        expect(cssFunctions.hue-rotate(255, 255)).toEqual('hue-rotate(255, 255)');
+    it('hueRotate', () => {
+        expect(cssFunctions.hueRotate(255, 255)).toEqual('hueRotate(255, 255)');
     });
 
 
@@ -200,12 +200,12 @@ describe('cssFunctions', () => {
     });
 
 
-    it('image-set type', () => {
-        expect(typeof cssFunctions.image-set).toEqual('function');
+    it('imageSet type', () => {
+        expect(typeof cssFunctions.imageSet).toEqual('function');
     });
 
-    it('image-set', () => {
-        expect(cssFunctions.image-set(255, 255)).toEqual('image-set(255, 255)');
+    it('imageSet', () => {
+        expect(cssFunctions.imageSet(255, 255)).toEqual('imageSet(255, 255)');
     });
 
 
@@ -236,12 +236,12 @@ describe('cssFunctions', () => {
     });
 
 
-    it('linear-gradient type', () => {
-        expect(typeof cssFunctions.linear-gradient).toEqual('function');
+    it('linearGradient type', () => {
+        expect(typeof cssFunctions.linearGradient).toEqual('function');
     });
 
-    it('linear-gradient', () => {
-        expect(cssFunctions.linear-gradient(255, 255)).toEqual('linear-gradient(255, 255)');
+    it('linearGradient', () => {
+        expect(cssFunctions.linearGradient(255, 255)).toEqual('linearGradient(255, 255)');
     });
 
 
@@ -335,30 +335,30 @@ describe('cssFunctions', () => {
     });
 
 
-    it('radial-gradient type', () => {
-        expect(typeof cssFunctions.radial-gradient).toEqual('function');
+    it('radialGradient type', () => {
+        expect(typeof cssFunctions.radialGradient).toEqual('function');
     });
 
-    it('radial-gradient', () => {
-        expect(cssFunctions.radial-gradient(255, 255)).toEqual('radial-gradient(255, 255)');
-    });
-
-
-    it('repeating-linear-gradient type', () => {
-        expect(typeof cssFunctions.repeating-linear-gradient).toEqual('function');
-    });
-
-    it('repeating-linear-gradient', () => {
-        expect(cssFunctions.repeating-linear-gradient(255, 255)).toEqual('repeating-linear-gradient(255, 255)');
+    it('radialGradient', () => {
+        expect(cssFunctions.radialGradient(255, 255)).toEqual('radialGradient(255, 255)');
     });
 
 
-    it('repeating-radial-gradient type', () => {
-        expect(typeof cssFunctions.repeating-radial-gradient).toEqual('function');
+    it('repeatingLinearGradient type', () => {
+        expect(typeof cssFunctions.repeatingLinearGradient).toEqual('function');
     });
 
-    it('repeating-radial-gradient', () => {
-        expect(cssFunctions.repeating-radial-gradient(255, 255)).toEqual('repeating-radial-gradient(255, 255)');
+    it('repeatingLinearGradient', () => {
+        expect(cssFunctions.repeatingLinearGradient(255, 255)).toEqual('repeatingLinearGradient(255, 255)');
+    });
+
+
+    it('repeatingRadialGradient type', () => {
+        expect(typeof cssFunctions.repeatingRadialGradient).toEqual('function');
+    });
+
+    it('repeatingRadialGradient', () => {
+        expect(cssFunctions.repeatingRadialGradient(255, 255)).toEqual('repeatingRadialGradient(255, 255)');
     });
 
 
@@ -515,30 +515,30 @@ describe('cssFunctions', () => {
     });
 
 
-    it('target-counter type', () => {
-        expect(typeof cssFunctions.target-counter).toEqual('function');
+    it('targetCounter type', () => {
+        expect(typeof cssFunctions.targetCounter).toEqual('function');
     });
 
-    it('target-counter', () => {
-        expect(cssFunctions.target-counter(255, 255)).toEqual('target-counter(255, 255)');
-    });
-
-
-    it('target-counters type', () => {
-        expect(typeof cssFunctions.target-counters).toEqual('function');
-    });
-
-    it('target-counters', () => {
-        expect(cssFunctions.target-counters(255, 255)).toEqual('target-counters(255, 255)');
+    it('targetCounter', () => {
+        expect(cssFunctions.targetCounter(255, 255)).toEqual('targetCounter(255, 255)');
     });
 
 
-    it('target-text type', () => {
-        expect(typeof cssFunctions.target-text).toEqual('function');
+    it('targetCounters type', () => {
+        expect(typeof cssFunctions.targetCounters).toEqual('function');
     });
 
-    it('target-text', () => {
-        expect(cssFunctions.target-text(255, 255)).toEqual('target-text(255, 255)');
+    it('targetCounters', () => {
+        expect(cssFunctions.targetCounters(255, 255)).toEqual('targetCounters(255, 255)');
+    });
+
+
+    it('targetText type', () => {
+        expect(typeof cssFunctions.targetText).toEqual('function');
+    });
+
+    it('targetText', () => {
+        expect(cssFunctions.targetText(255, 255)).toEqual('targetText(255, 255)');
     });
 
 
@@ -587,12 +587,12 @@ describe('cssFunctions', () => {
     });
 
 
-    it('var type', () => {
-        expect(typeof cssFunctions.var).toEqual('function');
+    it('variable type', () => {
+        expect(typeof cssFunctions.variable).toEqual('function');
     });
 
-    it('var', () => {
-        expect(cssFunctions.var(255, 255)).toEqual('var(255, 255)');
+    it('variable', () => {
+        expect(cssFunctions.variable(255, 255)).toEqual('variable(255, 255)');
     });
 
 });

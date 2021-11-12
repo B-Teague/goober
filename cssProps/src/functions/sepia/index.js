@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function sepia()
  */
 export default function sepia() {
-    return "sepia(" + appendArgs(arguments, ",") + ")"
+    return "sepia(" + appendArgs(arguments, ", ") + ")"
 }

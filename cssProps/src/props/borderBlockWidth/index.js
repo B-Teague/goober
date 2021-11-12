@@ -1,5 +1,5 @@
 //Do not modify this file.  This file is generated from ./scripts/generateProps.js
-import { default as appendArgs } from '../appendArgs/index'
+import { default as appendArgs } from '../../util/index'
 
 /**
  * @name borderBlockWidth

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function translate3d()
  */
 export default function translate3d() {
-    return "translate3d(" + appendArgs(arguments, ",") + ")"
+    return "translate3d(" + appendArgs(arguments, ", ") + ")"
 }
