@@ -1,20 +1,16 @@
+//Do not modify this file.  This file is generated from ./scripts/generateUnits.js
 /**
  * @name px
- * @category Units Helper
- * @summary Returns length in pixels unit for a given length
+ * @category CssProps Helper
+ * @summary Returns a numerical value appended with the css unit px
  *
  * @description
- * Returns length in pixels unit for a given length.
+ * Returns a numerical value appended with the css unit px
  *
- * @param {number} length - the original length
- * @returns {UnitPixels} length in pixels
- *
- * @example
- * // A measurement of 5 pixels
- * const length = px(5)
- * //=> "5px"
+ * @param {number} unit- The numerical value that the css unit will be appended
+ * @returns {string} numerical value with appended unit px
  */
 
-export default function px(length) {
-    return `${length}px`
+export default function px(unit) {
+    return unit + "px"
 }

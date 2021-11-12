@@ -13,13 +13,13 @@ const cssStandardProperties = Object.keys(cssProperties).reduce((result, nextKey
     return result
 }, {})
 
-jetpack.write('./cssProperties.json', cssStandardProperties)
+// jetpack.write('./cssProperties.json', cssStandardProperties)
 
 const cssSyntax = Object.keys(cssStandardProperties).map((prop) => {
     return cssStandardProperties[prop].syntax
 })
 
-jetpack.write('./cssPropertiesSyntax.json', cssSyntax)
+// jetpack.write('./cssPropertiesSyntax.json', cssSyntax)
 
 // {
 //     syntax: 'false | true',
@@ -52,16 +52,15 @@ describe('cssProps', () => {
 `
 
 //Loop through all the css properties generating the source code, the root index file, and the jest tests
-Object.keys(cssProperties).forEach(property => {
-    if(cssProperties[property].status === 'standard'){
-        const prop = toCamelCase(property);
-        
-        jetpack.dir(`./src/props/${prop}`);
-        jetpack.write(`./src/props/${prop}/index.js`, functionIndexTemplate(prop));
-        
-        indexTemplate += `export { default as ${prop} } from './${prop}/index'\n`
-        
-        testTemplate += `
+Object.keys(cssStandardProperties).forEach(property => {
+    const prop = toCamelCase(property);
+    
+    jetpack.dir(`./src/props/${prop}`);
+    jetpack.write(`./src/props/${prop}/index.js`, functionIndexTemplate(prop));
+    
+    indexTemplate += `export { default as ${prop} } from './${prop}/index'\n`
+    
+    testTemplate += `
     it('${prop} type', () => {
         expect(typeof cssProps.${prop}).toEqual('function');
     });
@@ -71,7 +70,6 @@ Object.keys(cssProperties).forEach(property => {
     });
 
 `
-    }
 });
 
 testTemplate += "});"
@@ -84,7 +82,7 @@ function toCamelCase(str) {
 
 function functionIndexTemplate(prop) {
     return `//Do not modify this file.  This file is generated from ./scripts/generateProps.js
-import { default as appendArgs } from '../appendArgs/index'
+import { default as appendArgs } from '../../util/index'
 
 /**
  * @name ${prop}
