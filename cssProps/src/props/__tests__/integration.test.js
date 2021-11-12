@@ -3,7 +3,7 @@ import { useContext } from 'preact/hooks';
 import { setup, extractCss } from 'goober';
 import { createGlobalStyles } from '../index';
 
-describe('createGlobalStyles', () => {
+describe('cssProps', () => {
     it('regular', () => {
         setup(h);
 
@@ -22,8 +22,9 @@ describe('createGlobalStyles', () => {
             target
         );
 
-        expect(extractCss()).toMatchSnapshot();
-        expect(target.innerHTML).toMatchSnapshot();
+        // expect(extractCss()).toMatchSnapshot();
+        // expect(target.innerHTML).toMatchSnapshot();
+        expect('TODO - Create integration tests for cssProps').toEqual('')
     });
 
     it('with theme', () => {
@@ -50,7 +51,8 @@ describe('createGlobalStyles', () => {
             target
         );
 
-        expect(extractCss()).toMatchSnapshot();
-        expect(target.innerHTML).toMatchSnapshot();
+        // expect(extractCss()).toMatchSnapshot();
+        // expect(target.innerHTML).toMatchSnapshot();
+        expect('TODO - Create integration tests for cssProps').toEqual('')
     });
 });

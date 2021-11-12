@@ -36,14 +36,47 @@ jetpack.write('./cssPropertiesSyntax.json', cssSyntax)
 //     mdn_url: 'https://developer.mozilla.org/docs/Web/CSS/-ms-accelerator'
 // }
 
+let indexTemplate = "//Do not modify this file.  This file is generated from ./scripts/generateProps.js\n"
+let testTemplate = `//Do not modify this file.  This file is generated from ./scripts/generateProps.js
+import * as cssProps from '../index';
+import { css, setup } from 'goober';
 
+jest.mock('goober', () => ({
+    css: jest.fn().mockReturnValue('css()')
+}));
+
+describe('cssProps', () => {
+    beforeEach(() => {
+        css.mockClear();
+    });
+`
+
+//Loop through all the css properties generating the source code, the root index file, and the jest tests
 Object.keys(cssProperties).forEach(property => {
     if(cssProperties[property].status === 'standard'){
         const prop = toCamelCase(property);
+        
         jetpack.dir(`./src/props/${prop}`);
         jetpack.write(`./src/props/${prop}/index.js`, functionIndexTemplate(prop));
+        
+        indexTemplate += `export { default as ${prop} } from './${prop}/index'\n`
+        
+        testTemplate += `
+    it('${prop} type', () => {
+        expect(typeof cssProps.${prop}).toEqual('function');
+    });
+
+    it('${prop}', () => {
+        expect(cssProps.${prop}("value")).toEqual({${prop}:'value'});
+    });
+
+`
     }
 });
+
+testTemplate += "});"
+jetpack.write('./src/props/index.js', indexTemplate);
+jetpack.write('./src/props/__tests__/cssProps.test.js', testTemplate);
 
 function toCamelCase(str) {
     return str.replace(/-[a-z]/g, g => g[1].toUpperCase())
@@ -51,7 +84,7 @@ function toCamelCase(str) {
 
 function functionIndexTemplate(prop) {
     return `//Do not modify this file.  This file is generated from ./scripts/generateProps.js
-import { appendArgs } from '../appendArgs/index'
+import { default as appendArgs } from '../appendArgs/index'
 
 /**
  * @name ${prop}
