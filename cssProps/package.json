@@ -25,17 +25,20 @@
     "styled",
     "cssProps"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "goober": "^2.0.29"
   },
   "devDependencies": {
-    "goober": "^2.0.29",
-    "microbundle": "^0.12.4",
-    "jest": "^24.1.0",
-    "preact": "^10.5.6",
     "@babel/plugin-transform-react-jsx": "^7.7.0",
     "@babel/preset-env": "^7.3.1",
-    "babel-jest": "^24.1.0"
+    "babel-jest": "^24.1.0",
+    "fs-jetpack": "^4.2.0",
+    "goober": "^2.0.29",
+    "jest": "^24.1.0",
+    "mdn-browser-compat-data": "^1.1.2",
+    "mdn-data": "^2.0.22",
+    "microbundle": "^0.12.4",
+    "preact": "^10.5.6"
   }
 }

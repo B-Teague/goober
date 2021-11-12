@@ -1,4 +1,5 @@
-import appendArgs from '../appendArgs/index'
+//Do not modify this file.  This file is generated from ./scripts/generateProps.js
+import { appendArgs } from '../appendArgs/index'
 
 /**
  * @name border
@@ -6,20 +7,14 @@ import appendArgs from '../appendArgs/index'
  * @summary Returns css property border and value as an object
  *
  * @description
- * Returns an object with the css property display with its passed in value
+ * Returns an object with the css property border with its passed in values
  *
- * @param {DisplayConstant} displayConstant1 - The first display constant value
- * @param {DisplayConstant} length - the original length
- * @returns {UnitPixels} length in pixels
- *
- * @example
- * // A measurement of 5 pixels
- * const length = px(5)
- * //=> "5px"
+ * @param - One or more parameters that will be appended together based on a delimiter
+ * @returns border property as object
  */
 
 export default function border() {
     return {
-        border: appendArgs(arguments, 3)
+        border: appendArgs(arguments)
     }
 }
