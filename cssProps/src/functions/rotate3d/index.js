@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function rotate3d()
  */
 export default function rotate3d() {
-    return "rotate3d(" + appendArgs(arguments, ", ") + ")"
+    return "rotate3d(" + appendArgs(arguments, ",") + ")"
 }

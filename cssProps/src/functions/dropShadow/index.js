@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function dropShadow()
  */
 export default function dropShadow() {
-    return "dropShadow(" + appendArgs(arguments, ", ") + ")"
+    return "dropShadow(" + appendArgs(arguments, ",") + ")"
 }

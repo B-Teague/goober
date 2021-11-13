@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function circle()
  */
 export default function circle() {
-    return "circle(" + appendArgs(arguments, ", ") + ")"
+    return "circle(" + appendArgs(arguments, ",") + ")"
 }

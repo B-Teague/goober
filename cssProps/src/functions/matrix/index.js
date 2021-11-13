@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function matrix()
  */
 export default function matrix() {
-    return "matrix(" + appendArgs(arguments, ", ") + ")"
+    return "matrix(" + appendArgs(arguments, ",") + ")"
 }

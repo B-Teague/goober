@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function variable()
  */
 export default function variable() {
-    return "variable(" + appendArgs(arguments, ", ") + ")"
+    return "variable(" + appendArgs(arguments, ",") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function grayscale()
  */
 export default function grayscale() {
-    return "grayscale(" + appendArgs(arguments, ", ") + ")"
+    return "grayscale(" + appendArgs(arguments, ",") + ")"
 }

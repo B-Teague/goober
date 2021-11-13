@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function repeatingLinearGradient()
  */
 export default function repeatingLinearGradient() {
-    return "repeatingLinearGradient(" + appendArgs(arguments, ", ") + ")"
+    return "repeatingLinearGradient(" + appendArgs(arguments, ",") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function attr()
  */
 export default function attr() {
-    return "attr(" + appendArgs(arguments, ", ") + ")"
+    return "attr(" + appendArgs(arguments, ",") + ")"
 }

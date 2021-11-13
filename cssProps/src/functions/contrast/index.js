@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function contrast()
  */
 export default function contrast() {
-    return "contrast(" + appendArgs(arguments, ", ") + ")"
+    return "contrast(" + appendArgs(arguments, ",") + ")"
 }

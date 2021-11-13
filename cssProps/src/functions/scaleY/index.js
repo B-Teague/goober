@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function scaleY()
  */
 export default function scaleY() {
-    return "scaleY(" + appendArgs(arguments, ", ") + ")"
+    return "scaleY(" + appendArgs(arguments, ",") + ")"
 }

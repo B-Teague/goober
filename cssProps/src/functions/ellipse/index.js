@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function ellipse()
  */
 export default function ellipse() {
-    return "ellipse(" + appendArgs(arguments, ", ") + ")"
+    return "ellipse(" + appendArgs(arguments, ",") + ")"
 }

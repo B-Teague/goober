@@ -59,7 +59,7 @@ Object.keys(cssStandardUnits).forEach(unit => {
 
 testTemplate += "});"
 jetpack.write('./src/units/index.js', indexTemplate);
-jetpack.write('./src/units/__tests__/cssUnits.test.js', testTemplate);
+jetpack.write('./src/units/__tests__/units.test.js', testTemplate);
 
 function functionIndexTemplate(unit) {
     return `//Do not modify this file.  This file is generated from ./scripts/generateUnits.js

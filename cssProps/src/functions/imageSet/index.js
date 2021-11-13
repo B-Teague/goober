@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function imageSet()
  */
 export default function imageSet() {
-    return "imageSet(" + appendArgs(arguments, ", ") + ")"
+    return "imageSet(" + appendArgs(arguments, ",") + ")"
 }

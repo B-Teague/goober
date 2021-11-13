@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function crossFade()
  */
 export default function crossFade() {
-    return "crossFade(" + appendArgs(arguments, ", ") + ")"
+    return "crossFade(" + appendArgs(arguments, ",") + ")"
 }

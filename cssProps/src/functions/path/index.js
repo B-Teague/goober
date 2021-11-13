@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function path()
  */
 export default function path() {
-    return "path(" + appendArgs(arguments, ", ") + ")"
+    return "path(" + appendArgs(arguments, ",") + ")"
 }

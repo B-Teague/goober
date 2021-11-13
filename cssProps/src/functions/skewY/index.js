@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function skewY()
  */
 export default function skewY() {
-    return "skewY(" + appendArgs(arguments, ", ") + ")"
+    return "skewY(" + appendArgs(arguments, ",") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function conicGradient()
  */
 export default function conicGradient() {
-    return "conicGradient(" + appendArgs(arguments, ", ") + ")"
+    return "conicGradient(" + appendArgs(arguments, ",") + ")"
 }

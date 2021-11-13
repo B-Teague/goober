@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function radialGradient()
  */
 export default function radialGradient() {
-    return "radialGradient(" + appendArgs(arguments, ", ") + ")"
+    return "radialGradient(" + appendArgs(arguments, ",") + ")"
 }

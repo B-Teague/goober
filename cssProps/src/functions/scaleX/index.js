@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function scaleX()
  */
 export default function scaleX() {
-    return "scaleX(" + appendArgs(arguments, ", ") + ")"
+    return "scaleX(" + appendArgs(arguments, ",") + ")"
 }

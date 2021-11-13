@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function rgb()
  */
 export default function rgb() {
-    return "rgb(" + appendArgs(arguments, ", ") + ")"
+    return "rgb(" + appendArgs(arguments, ",") + ")"
 }

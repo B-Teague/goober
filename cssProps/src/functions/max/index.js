@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function max()
  */
 export default function max() {
-    return "max(" + appendArgs(arguments, ", ") + ")"
+    return "max(" + appendArgs(arguments, ",") + ")"
 }

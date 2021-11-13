@@ -56,7 +56,7 @@ Object.keys(cssSyntaxFunctions).forEach(func => {
     });
 
     it('${func}', () => {
-        expect(cssFunctions.${func}(255, 255)).toEqual('${func}(255, 255)');
+        expect(cssFunctions.${func}(255,255)).toEqual('${func}(255,255)');
     });
 
 `
@@ -64,7 +64,7 @@ Object.keys(cssSyntaxFunctions).forEach(func => {
 
 testTemplate += "});"
 jetpack.write('./src/functions/index.js', indexTemplate);
-jetpack.write('./src/functions/__tests__/cssFunctions.test.js', testTemplate);
+jetpack.write('./src/functions/__tests__/functions.test.js', testTemplate);
 
 function toCamelCase(str) {
     return str.replace(/-[a-z]/g, g => g[1].toUpperCase())
@@ -86,6 +86,6 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function ${func}()
  */
 export default function ${func}() {
-    return "${func}(" + appendArgs(arguments, ", ") + ")"
+    return "${func}(" + appendArgs(arguments, ",") + ")"
 }`
 }

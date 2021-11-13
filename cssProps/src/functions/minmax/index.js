@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function minmax()
  */
 export default function minmax() {
-    return "minmax(" + appendArgs(arguments, ", ") + ")"
+    return "minmax(" + appendArgs(arguments, ",") + ")"
 }

@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function targetCounter()
  */
 export default function targetCounter() {
-    return "targetCounter(" + appendArgs(arguments, ", ") + ")"
+    return "targetCounter(" + appendArgs(arguments, ",") + ")"
 }

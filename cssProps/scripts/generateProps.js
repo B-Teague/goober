@@ -74,7 +74,7 @@ Object.keys(cssStandardProperties).forEach(property => {
 
 testTemplate += "});"
 jetpack.write('./src/props/index.js', indexTemplate);
-jetpack.write('./src/props/__tests__/cssProps.test.js', testTemplate);
+jetpack.write('./src/props/__tests__/props.test.js', testTemplate);
 
 function toCamelCase(str) {
     return str.replace(/-[a-z]/g, g => g[1].toUpperCase())

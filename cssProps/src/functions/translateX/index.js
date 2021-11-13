@@ -13,5 +13,5 @@ import { default as appendArgs } from '../../util/index'
  * @returns {string} Returns a comma delimited function call for the function translateX()
  */
 export default function translateX() {
-    return "translateX(" + appendArgs(arguments, ", ") + ")"
+    return "translateX(" + appendArgs(arguments, ",") + ")"
 }
